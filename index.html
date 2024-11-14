@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Store Catalogue</h1>
+    <div class="filter-sort">
+        <select id="categoryFilter" onchange="filterProducts()">
+            <option value="all">All Categories</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+        </select>
+        <select id="priceSort" onchange="sortProducts()">
+            <option value="none">Sort by Price</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </div>
+</header>
+
+<main>
+    <div id="productGrid" class="product-grid">
+        <div class="product" data-category="men">
+            <img src="images/MN(Air Jordan 4 Retro).png" alt="Product 1">
+            <h3>Air Jordan 4 Retro "Fear"</h3>
+            <p class="price">$199.99</p>
+            <button onclick="addToCart('Air Jordan 4 Retro')">Add to Cart</button>
+        </div>
+        <div class="product" data-category="men">
+            <img src="images/MN(Nike Air Pegasus 2005).png" alt="Product 1">
+            <h3>Air Pegasus 2005</h3>
+            <p class="price">$149.99</p>
+            <button onclick="addToCart('Air Pegasus 2005')">Add to Cart</button>
+        </div>
+        <div class="product" data-category="men">
+            <img src="images/MN(Nike C1TY “Concrete”).png" alt="Product 1">
+            <h3>C1TY “Concrete”</h3>
+            <p class="price">$99.99</p>
+            <button onclick="addToCart('C1TY “Concrete')">Add to Cart</button>
+        </div>
+        <div class="product" data-category="women">
+            <img src="images/WMN(Nike Court Legacy Lift).png" alt="Product 2">
+            <h3>Court Legacy Lift</h3>
+            <p class="price">$149.99</p>
+            <button onclick="addToCart('Court Legacy Lift')">Add to Cart</button>
+        </div>
+        <div class="product" data-category="women">
+            <img src="images/WMN(Nike Dunk Low).png" alt="Product 2">
+            <h3>Dunk Low</h3>
+            <p class="price">$199.99</p>
+            <button onclick="addToCart('Dunk Low')">Add to Cart</button>
+        </div>
+        <div class="product" data-category="women">
+            <img src="images/WMN(Nike Dunk Low LX).png" alt="Product 2">
+            <h3>Dunk Low LX</h3>
+            <p class="price">$149.99</p>
+            <button onclick="addToCart('Dunk Low LX')">Add to Cart</button>
+        </div>
+        <div class="product" data-category="women">
+            <img src="images/WMN(Nike Invincible 3).jpeg" alt="Product 2">
+            <h3>Invincible 3</h3>
+            <p class="price">$99.99</p>
+            <button onclick="addToCart('Invincible 3')">Add to Cart</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Store Catalogue</p>
+</footer>
+</body>
+</html>
